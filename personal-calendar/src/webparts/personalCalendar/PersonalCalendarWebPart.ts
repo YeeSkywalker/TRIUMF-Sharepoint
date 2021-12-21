@@ -12,7 +12,11 @@ import PersonalCalendar from './components/PersonalCalendar';
 import { IPersonalCalendarProps } from './components/IPersonalCalendarProps';
 
 export interface IPersonalCalendarWebPartProps {
-  description: string;
+  title: string;
+  refreshInterval: number;
+  daysInAdvance: number;
+  numEvents: number;
+  showCalendar: boolean;
 }
 
 export default class PersonalCalendarWebPart extends BaseClientSideWebPart<IPersonalCalendarWebPartProps> {
